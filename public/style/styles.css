@@ -31,7 +31,116 @@ h2
  background-color: aliceblue;
  text-align: center;
  width: 33% !important;
- height: 400px !important;
+ max-height: 500px !important;
+ margin-top: 100px;
+ border-color: black !important;
+ border-width: 3px !important;
+ border-style:solid ;
+ overflow: scroll;
+}
+
+.area
+{
+    margin-bottom: 5px !important;
+    width: 80% !important;
+    height: 40px !important;
+    transition: width 1s ease-in-out !important;
+}
+.area:focus
+{
+    width: 100% !important;
+}
+#details
+{
+    height: 100px !important;
+}
+.inside
+{
+    margin-top: 30px;
+}
+.test
+{
+    width: 200px;
+    height: 40px;
+    background: #186F65;
+    position: relative;
+    transition: width 2s ;
+    cursor: cell !important;
+    color: white;
+    margin-bottom: 20px;
+}
+.test:hover
+{
+    width: 300px;
+}
+
+.today
+{
+    text-align: center;
+    width: 300px !important;
+    background-color: #183D3D;
+    margin: 5px;
+   
+}
+.form-switch .form-check-input
+{
+    margin-top: 7px !important;
+}
+.btn
+{
+  transition: width 5s !important;
+  /* transition-timing-function: linear; */
+}
+.btn:hover
+{
+    width: 300px;
+    
+}
+/* today page */
+.intod
+{
+    overflow:auto;
+}
+.card
+{
+    margin-bottom: 5px;
+}
+.date
+{
+    background-color: gold;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2px;
+}
+.det 
+{
+    text-align: start;
+    margin-left: 42px;
+    color: rgb(169, 169, 169);
+}
+.task
+{
+    text-align: start;
+    margin-left: 40px;
+}
+ /* footer */
+footer
+{
+    position: fixed;
+    background-color: #183D3D !important;
+    bottom: -10px;
+    text-align: center;
+    color: antiquewhite;
+}
+/* for mobile  */
+@media screen and (max-width:480px) {
+    .input
+{
+ background-color: aliceblue;
+ text-align: center;
+ width: 80% !important;
+ height: auto !important;
  margin-top: 100px;
  border-color: black !important;
  border-width: 3px !important;
@@ -66,11 +175,12 @@ h2
     position: relative;
     transition: width 2s ;
     cursor: cell !important;
+    margin-bottom: 5px !important;
     color: white;
 }
 .test:hover
 {
-    width: 300px;
+    width: 100px !important;
 }
 
 .today
@@ -95,39 +205,93 @@ h2
     width: 300px;
     
 }
-/* today page */
-
-.card
-{
-    margin-bottom: 5px;
-}
 .date
 {
     background-color: gold;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
     margin-top: 2px;
 }
-.det 
-{
-    text-align: start;
-    margin-left: 42px;
-    color: rgb(169, 169, 169);
 }
-.task
+@media screen and (max-width:1200px)
 {
-    text-align: start;
-    margin-left: 40px;
+    .input
+    {
+     background-color: aliceblue;
+     text-align: center;
+     width: 80% !important;
+     height: 800px !important;
+     margin-top: 100px;
+     border-color: black !important;
+     border-width: 3px !important;
+     border-style:solid ;
+     overflow: scroll;
+    }
+    
+    .area
+    {
+        margin-bottom: 5px !important;
+        width: 80% !important;
+        height: 40px !important;
+        transition: width 1s ease-in-out !important;
+    }
+    .area:focus
+    {
+        width: 100% !important;
+    }
+    #details
+    {
+        height: 100px !important;
+    }
+    .inside
+    {
+        margin-top: 30px;
+    }
+    .test
+    {
+        width: 200px;
+        height: 40px;
+        background: #186F65;
+        position: relative;
+        transition: width 2s ;
+        cursor: cell !important;
+        margin-bottom: 5px !important;
+        color: white;
+    }
+    .test:hover
+    {
+        width: 100px !important;
+    }
+    
+    .today
+    {
+        text-align: center;
+        width: 300px !important;
+        background-color: #183D3D;
+        margin: 5px;
+       
+    }
+    .form-switch .form-check-input
+    {
+        margin-top: 7px !important;
+    }
+    .btn
+    {
+      transition: width 5s !important;
+      /* transition-timing-function: linear; */
+    }
+    .btn:hover
+    {
+        width: 300px;
+        
+    }
+    .date
+    {
+        background-color: gold;
+        width: 65%;
+        margin-left: 20%;
+        margin-right: 0%;
+        margin-top: 2px;
+    }
 }
- /* footer */
-footer
-{
-    position: absolute;
-    background-color: #183D3D !important;
-    bottom: 0px;
-    text-align: center;
-    color: antiquewhite;
-}
-
-  
