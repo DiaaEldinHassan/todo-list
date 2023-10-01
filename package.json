@@ -1,0 +1,23 @@
+{
+  "name": "server-capstone",
+  "version": "1.0.0",
+  "description": "capstone for backend server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "ejs",
+    "css"
+  ],
+  "author": "Diaa Eldin Hassan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}

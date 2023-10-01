@@ -1,0 +1,36 @@
+<%- include('partials/header.ejs') %>
+
+
+    
+        <% if (locals.ui&&locals.today) { %>
+          <div class="container input rounded">
+          <div class="intod">
+           <h2 style="color: red;">  Missing </h2>
+           <% for (let index = 0; index < ui.length; index++) {%>
+            <% var slcy=ui[index]["date"].slice(0,4);
+               var slcm=ui[index]["date"].slice(5,7);
+               var slcd=ui[index]["date"].slice(8,ui[index]["date"].length);            
+            %>
+            <% if (slcy<year||slcm<month||slcd<day) {%>
+                
+                <div class="card bg-danger">
+                    <div class="row">
+                      
+                      <div class="col task text-white">
+                  <%= ui[index]["task"] %>
+                      </div>
+                      <div class="col">
+                        <div class="date rounded-pill">
+                        <%= ui[index]["date"] %></div>
+                      </div>
+                    </div>
+                    <div class="det">
+                     - <%= ui[index]["text"] %>
+                    </div>
+                  </div>  
+        
+          <% }}%>
+            </div>
+            </div>
+           <% } %>
+<%- include('partials/footer.ejs') %>

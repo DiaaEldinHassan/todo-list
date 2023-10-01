@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs') %>
+
+
+    
+        <% if (locals.ui&&locals.today) { %>
+          <div class="container input rounded">
+          <div class="intod">
+           <h2>  <%= today %> </h2>
+           <% for (let index = 0; index < ui.length; index++) {%>
+            <% if (ui[index]["date"]==today) {%>
+
+            <div class="card">
+              <div class="row">
+                
+                <div class="col task">
+            <%= ui[index]["task"] %>
+                </div>
+                <div class="col">
+                  <div class="date rounded-pill">
+                  <%= ui[index]["date"] %></div>
+                </div>
+              </div>
+              <div class="det">
+               - <%= ui[index]["text"] %>
+              </div>
+            </div>  
+          <%} }%>
+            </div>
+            </div>
+           <% } %>
+<%- include('partials/footer.ejs') %>

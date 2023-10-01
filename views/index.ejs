@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+
+      <div class="container input rounded">
+        <div class="inside">
+        <h2>To Do List</h2>
+        <h4>Please enter the task</h4>
+        <form action="/submit" method="POST">
+          
+          <input type="text" name="text" id="text" class="rounded area" placeholder="Please enter the task" required><br>
+          <input type="text" name="details" id="details" class="rounded area" placeholder="Please enter the details" required><br>
+          <input type="date" name="date" class="rounded area" id="date" required><br>
+          <input type="submit" class="test rounded" value="Add">
+        </form>
+      </div>
+    </div>
+
+ <%- include('partials/footer.ejs') %>
